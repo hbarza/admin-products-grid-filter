@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Productfilter
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+-->
+<config>
+	<modules>
+		<Codnitive_Productfilter>
+			<version>1.03</version>
+		</Codnitive_Productfilter>
+	</modules>
+
+	<global>
+		<models>
+			<codnitive_productfilter>
+				<class>Codnitive_Productfilter_Model</class>
+			</codnitive_productfilter>
+		</models>
+
+		<helpers>
+			<codnitive_productfilter>
+				<class>Codnitive_Productfilter_Helper</class>
+			</codnitive_productfilter>
+		</helpers>
+
+		<blocks>
+			<codnitive_productfilter>
+				<class>Codnitive_Productfilter_Block</class>
+			</codnitive_productfilter>
+			<adminhtml>
+				<rewrite>
+					<catalog_product_grid>Codnitive_Productfilter_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+	</global>
+</config>
